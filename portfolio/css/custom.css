@@ -1,0 +1,306 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.5s; /* Animation */
+}
+
+/* About Container Styling */
+.about-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Adding a light background to the section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the section */
+}
+
+/* Project Title Styling */
+#projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Ensures the title is centered */
+}
+
+/* Project Descriptions Styling */
+#projects p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+    padding: 15px;
+    border: 2px solid #ddd; /* Light border around each description */
+    border-radius: 8px; /* Rounded corners for the boxes */
+    background-color: #fff; /* White background for each description */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Adding a smooth transition for hover */
+}
+
+/* Hover effect on project descriptions */
+#projects p:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+    color: #007BFF;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Adding a shadow on hover for a more interactive feel */
+}
+
+/* Additional Styling for Responsive Layout */
+@media (max-width: 768px) {
+    #projects {
+        padding: 30px 10px;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    #projects p {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+/* Contact Section Styling */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Download Resume Button */
+.download-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #007BFF;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    border-top: 2px solid #555;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about, #projects, #contact {
+        padding: 20px 10px;
+    }
+
+    #projects h2, #contact h2 {
+        font-size: 2rem;
+    }
+
+    #projects p {
+        font-size: 1rem;
+    }
+
+    .download-btn {
+        font-size: 1rem;
+    }
+}
+
+#skills {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.skill {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transform: translateY(30px); /* Initial position off-screen */
+    opacity: 0; /* Initial opacity */
+    animation: fadeInUp 0.8s ease-out forwards; /* Apply fade-in-up animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.skill h3 {
+    font-size: 1.6rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #skills {
+        padding: 30px 10px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill {
+        padding: 15px;
+    }
+
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skill h3 {
+        font-size: 1.4rem;
+    }
+
+    .skill p {
+        font-size: 1rem;
+    }
+}
